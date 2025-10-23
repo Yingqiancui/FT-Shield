@@ -8,16 +8,28 @@ For detailed insights and the methodology behind FT-Shield, refer to the paper: 
 For generating watermarked images:
 
 ```python
-python main.py
+python main.py --img_dir /path/to/your/img --captions_file /path/to/your/caption_files.jsonl
 ```
 
 For training the watermark detector:
 
 ```python
-python train_classifier.py
+python train_classifier.py --train_path /your/train/path
+```
+You can simply organize the training directory into two subfolders:
+```
+/your/train/path/
+    ├── clean/
+    └── watermarked/
 ```
 
 For evaluating the watermark detector:
 ```python
-python test.py
+python test.py --test_path /your/test/path
+```
+Similarly, you can simply organize the training directory into:
+```
+/your/test/path/
+    ├── clean/
+    └── watermarked/
 ```
