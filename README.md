@@ -5,8 +5,19 @@ FT-Shield introduces a new method for providing copyright protection for digital
 For detailed insights and the methodology behind FT-Shield, refer to the paper: [FT-Shield: A Watermark Against Unauthorized Fine-tuning in Text-to-Image Diffusion Models](https://arxiv.org/abs/2310.02401).
 
 ## Instruction
-For generating watermarked images, execute the following command:
+For generating watermarked images:
 
 ```python
 python main.py
+```
+
+For training the watermark detector:
+
+```python
+python train_classifier.py
+```
+
+For training the watermark detector:
+```python
+python test.py
 ```
