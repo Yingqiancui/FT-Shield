@@ -17,7 +17,7 @@ For training the watermark detector:
 python train_classifier.py
 ```
 
-For training the watermark detector:
+For evaluating the watermark detector:
 ```python
 python test.py
 ```
