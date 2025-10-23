@@ -34,6 +34,7 @@ Similarly, you can simply organize the training directory into:
     └── watermarked/
 ```
 
-For the training of the detector, remember to augment the data generated from the model fine-tuned with clean data into the original clean dataset, and augment the images generated from the model fine-tuned with watermarked images into the watermarked dataset.
+## Remark
+1. For the training of the detector, remember to augment the data generated from the model fine-tuned with clean data into the original clean dataset, and augment the images generated from the model fine-tuned with watermarked images into the watermarked dataset.
 
-For the MoE classifier implementation, the gate model is trained using the same ResNet architecture defined in resnet.py.
+2. For the MoE classifier implementation, the gate model is trained using the same ResNet architecture defined in resnet.py.
